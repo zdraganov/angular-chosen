@@ -21,6 +21,7 @@ angular.module('localytics.directives').directive 'chosen', ->
     'displayDisabledOptions'
     'displaySelectedOptions'
     'width'
+    'showOnEmpty'
   ]
 
   snakeCase = (input) -> input.replace /[A-Z]/g, ($1) -> "_#{$1.toLowerCase()}"
@@ -101,4 +102,4 @@ angular.module('localytics.directives').directive 'chosen', ->
         else
           removeEmptyMessage() if empty
           stopLoading()
-          disableWithMessage() if isEmpty(newVal)
+          disableWithMessage() if isEmpty(newVal) and !options.show_on_empty
