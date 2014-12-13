@@ -1,5 +1,5 @@
 {
-  "name": "angular-chosen-localytics",
+  "name": "angular-chosen-zdraganov",
   "version": "1.0.7.1",
   "main": "chosen.js",
   "ignore": [
@@ -7,7 +7,7 @@
     "example"
   ],
   "dependencies": {
-    "chosen": "1.2.0",
+    "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.2.0/chosen_v1.2.0.zip",
     "angular": ">=1.2.0"
   }
 }
